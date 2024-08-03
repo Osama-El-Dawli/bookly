@@ -3,7 +3,6 @@ import 'package:bookly_app/features/home/presentation/views/home_view.dart';
 import 'package:bookly_app/features/splash/presentation/views/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:svg_flutter/svg.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -38,9 +37,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
       crossAxisAlignment: CrossAxisAlignment.stretch,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SvgPicture.asset(
-          AssetsData.logoSvg,
-          width: ((MediaQuery.sizeOf(context).width) * 75 / 100),
+        Image.asset(
+          AssetsData.logo,
         ),
         const SizedBox(
           height: 16,
