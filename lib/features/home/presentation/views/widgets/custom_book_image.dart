@@ -1,8 +1,8 @@
 import 'package:bookly_app/core/utils/assets_data.dart';
 import 'package:flutter/material.dart';
 
-class FeatureListViewItem extends StatelessWidget {
-  const FeatureListViewItem({
+class CustomBookImage extends StatelessWidget {
+  const CustomBookImage({
     super.key,
   });
   // final ImageProvider image;
