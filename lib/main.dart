@@ -20,11 +20,12 @@ class BooklyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.primaryColor,
         iconTheme: const IconThemeData(color: Colors.white),
         buttonTheme: const ButtonThemeData(buttonColor: Colors.white),
-        textTheme:
-            GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme.apply(
-                  bodyColor: Colors.white,
-                  displayColor: Colors.white,
-                )),
+        textTheme: GoogleFonts.montserratTextTheme(
+          ThemeData.dark().textTheme.apply(
+                bodyColor: Colors.white,
+                displayColor: Colors.white,
+              ),
+        ),
       ),
     );
   }
