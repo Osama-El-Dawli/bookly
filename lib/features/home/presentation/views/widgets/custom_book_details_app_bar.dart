@@ -12,7 +12,7 @@ class CustomBookDetailsAppBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
-            onPressed: () => context.pop(),
+            onPressed: () => GoRouter.of(context).pop(),
             icon: const Icon(Icons.close),
           ),
           IconButton(
