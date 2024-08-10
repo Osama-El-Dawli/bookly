@@ -1,3 +1,4 @@
+import 'package:bookly_app/features/home/data/models/book_model/book_model.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/book_list_view_item.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,9 @@ class SearchResultLisView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemBuilder: (context, index) {
-        return const BookListViewItem();
+        return const BookListViewItem(
+          bookModel: BookModel(),
+        );
       },
       itemCount: 20,
     );

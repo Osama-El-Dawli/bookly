@@ -9,8 +9,8 @@ class CustomLoadingShimmer extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 2.6 / 4,
       child: Shimmer.fromColors(
-        baseColor: Colors.grey[300]!.withOpacity(.7),
-        highlightColor: Colors.grey[100]!.withOpacity(.7),
+        baseColor: Colors.grey[300]!.withOpacity(.2),
+        highlightColor: Colors.grey[100]!.withOpacity(.2),
         child: Container(
           width: MediaQuery.of(context).size.width * 0.3,
           decoration: BoxDecoration(
