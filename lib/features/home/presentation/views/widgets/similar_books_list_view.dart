@@ -15,7 +15,10 @@ class SimilarBooksListView extends StatelessWidget {
           itemBuilder: (context, index) {
             return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 5),
-              child: CustomBookImage(),
+              child: CustomBookImage(
+                imageUrl:
+                    'https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=740&t=st=1723294460~exp=1723295060~hmac=51b2a4841d5664f7cdebea0076b33692f70800153a53723621f7f7a8b28a9ec4',
+              ),
             );
           }),
     );
