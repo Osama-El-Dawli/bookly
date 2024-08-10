@@ -23,7 +23,7 @@ class BookListViewItem extends StatelessWidget {
           child: Row(
             children: [
               CustomBookImage(
-                  imageUrl: bookModel.volumeInfo!.imageLinks!.thumbnail!),
+                  imageUrl: bookModel.volumeInfo!.imageLinks?.thumbnail ?? ''),
               const SizedBox(
                 width: 30,
               ),
@@ -48,7 +48,9 @@ class BookListViewItem extends StatelessWidget {
                     Opacity(
                       opacity: .7,
                       child: Text(
-                        bookModel.volumeInfo!.authors![0],
+                        bookModel.volumeInfo!.authors!.isEmpty
+                            ? 'Known Author'
+                            : bookModel.volumeInfo!.authors![0],
                         style: Styles.textStyle14,
                       ),
                     ),
