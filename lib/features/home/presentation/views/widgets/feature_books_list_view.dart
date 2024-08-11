@@ -29,8 +29,10 @@ class FeatureBooksListView extends StatelessWidget {
                   return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: GestureDetector(
-                      onTap: () =>
-                          GoRouter.of(context).push(AppRouts.bookDetailsView),
+                      onTap: () => GoRouter.of(context).push(
+                        AppRouts.bookDetailsView,
+                        extra: bookList[index],
+                      ),
                       child: CustomBookImage(
                         imageUrl:
                             bookList[index].volumeInfo!.imageLinks!.thumbnail!,
