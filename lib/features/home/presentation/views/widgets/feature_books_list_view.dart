@@ -9,7 +9,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 class FeatureBooksListView extends StatelessWidget {
-  const FeatureBooksListView({super.key});
+  const FeatureBooksListView({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +51,7 @@ class FeatureBooksListView extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 8),
                   child: CustomLoadingShimmer(),
                 ),
-                itemCount: 15,
+                itemCount: 10,
               ));
         }
       },
